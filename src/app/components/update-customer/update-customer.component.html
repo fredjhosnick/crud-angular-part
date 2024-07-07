@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="form-container">
+    <h2 class="form-title">Update Customer</h2>
+    <form [formGroup]="updateCustomerForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          formControlName="name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          required
+          formControlName="phone"
+        />
+      </div>
+      <button type="submit" (click)="updateCustomer()">Update</button>
+    </form>
+  </div>
+</div>
